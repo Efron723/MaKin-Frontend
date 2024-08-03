@@ -1,0 +1,878 @@
+// 導入 Bootstrap 變數和函數
+@import 'node_modules/bootstrap/scss/functions';
+@import 'node_modules/bootstrap/scss/variables';
+@import 'node_modules/bootstrap/scss/mixins';
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+// #region 使用 Bootstrap 的 mixin 定義 music-container
+
+$container-padding-xx-large: 160px;
+$container-padding-x-large: 128px;
+$container-padding-large: 96px;
+$container-padding-medium: 64px;
+$container-padding-small: 32px;
+$container-padding-x-small: 28px;
+
+@mixin xx-large-container($padding-x: $container-padding-xx-large) {
+  width: 100%;
+  padding-right: $padding-x;
+  padding-left: $padding-x;
+  margin-right: auto;
+  margin-left: auto;
+}
+@mixin x-large-container($padding-x: $container-padding-x-large) {
+  width: 100%;
+  padding-right: $padding-x;
+  padding-left: $padding-x;
+  margin-right: auto;
+  margin-left: auto;
+}
+@mixin large-container($padding-x: $container-padding-large) {
+  width: 100%;
+  padding-right: $padding-x;
+  padding-left: $padding-x;
+  margin-right: auto;
+  margin-left: auto;
+}
+@mixin medium-container($padding-x: $container-padding-medium) {
+  width: 100%;
+  padding-right: $padding-x;
+  padding-left: $padding-x;
+  margin-right: auto;
+  margin-left: auto;
+}
+@mixin small-container($padding-x: $container-padding-small) {
+  width: 100%;
+  padding-right: $padding-x;
+  padding-left: $padding-x;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@mixin x-small-container($padding-x: $container-padding-x-small) {
+  width: 100%;
+  padding-right: $padding-x;
+  padding-left: $padding-x;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+// 定義媒體查詢
+@media (min-width: 1921px) {
+  .music-container {
+    @include large-container($container-padding-xx-large);
+  }
+}
+
+@media (max-width: 1920px) and (min-width: 1637px) {
+  .music-container {
+    @include large-container($container-padding-xx-large);
+  }
+}
+
+@media (max-width: 1636px) and (min-width: 1353px) {
+  .music-container {
+    @include large-container($container-padding-x-large);
+  }
+}
+
+@media (max-width: 1352px) and (min-width: 1069px) {
+  .music-container {
+    @include large-container($container-padding-large);
+  }
+}
+
+@media (max-width: 1068px) and (min-width: 785px) {
+  .music-container {
+    @include large-container($container-padding-medium);
+  }
+}
+
+@media (max-width: 784px) and (min-width: 500px) {
+  .music-container {
+    @include large-container($container-padding-small);
+  }
+}
+
+@media (max-width: 499px) {
+  .music-container {
+    @include small-container($container-padding-x-small);
+  }
+}
+
+// #endregion 使用 Bootstrap 的 mixin 定義 music-container
+
+// #region 覆寫 color
+
+$theme-colors: (
+  'primary': #0d6efd,
+  'secondary': #6c757d,
+  'success': #198754,
+  'info': #0dcaf0,
+  'warning': #ffc107,
+  'danger': #dc3545,
+  'light': #f8f9fa,
+  'dark': #000000,
+  // 新增自定義顏色
+  'purple1': #685beb,
+  'purple2': #958cea,
+  'purple3': #dbd7ff,
+  'black95': #1a1a1a,
+  'black90': #272727,
+  'black80': #484848,
+  'black60': #686868,
+  'black40': #888888,
+  'black30': #a1a1a1,
+  'black20': #d1d1d1,
+  'eee': #eee,
+  'A': #ff9900,
+  'B': #00a3ff,
+  'C': #f12222,
+  'D': #9e00ff,
+  'E': #3ead2c,
+);
+// 設置頁籤的邊框圓角為 0
+$nav-tabs-border-radius: 0;
+$nav-pills-border-radius: 0;
+
+$nav-tabs-link-active-color: #685beb; //應用中的頁籤的字顏色
+$nav-pills-link-active-color: #685beb;
+$nav-link-color: #888888;
+
+// 設置頁籤文字大小和粗細
+$nav-link-font-size: 1.25rem; // 設置文字大小
+$nav-link-font-weight: bold; // 設置文字粗細
+$nav-link-hover-color: #685beb;
+
+// navbar 暗色模式修改
+$navbar-dark-color: #d1d1d1;
+$navbar-dark-hover-color: #958cea;
+$navbar-dark-active-color: #958cea;
+// #endregion 覆蓋 覆寫 color
+
+// #region 覆寫 border-radius
+
+$border-radius: 0;
+$card-border-radius: 0;
+
+// #endregion 覆寫 border-radius
+
+// #region dark mode 下拉選單 覆寫
+
+$dropdown-dark-bg: #1a1a1a;
+
+// #endregion dark mode 下拉選單 覆寫
+
+// #region 設置頁籤的邊框圓角為 0
+
+$nav-tabs-border-radius: 0;
+$nav-pills-border-radius: 0;
+
+$nav-tabs-link-active-color: #685beb; //應用中的頁籤的字顏色
+$nav-link-color: #888888;
+
+// #endregion 設置頁籤的邊框圓角為 0
+
+// #region 設置頁籤文字大小和粗細
+
+$nav-link-font-size: 1.25rem; // 設置文字大小
+$nav-link-font-weight: bold; // 設置文字粗細
+$nav-link-hover-color: #685beb;
+
+// #endregion
+
+// #region 麵包屑樣式修改
+
+$breadcrumb-padding-y: 0.5rem;
+$breadcrumb-padding-x: 0;
+$breadcrumb-item-padding-x: 0.8rem;
+$breadcrumb-margin-bottom: 0.2rem;
+$breadcrumb-divider-color: #888888;
+$breadcrumb-active-color: #888888;
+$breadcrumb-divider: quote('⟩');
+
+// #endregion
+
+// #region accordion
+
+$accordion-color: black; // content text color
+$accordion-bg: white; // context bg-color
+$accordion-border-color: #a1a1a1;
+
+$accordion-button-color: black;
+$accordion-button-bg: #dbd7ff;
+$accordion-button-active-bg: #958cea;
+$accordion-button-active-color: white;
+$accordion-transition: $btn-transition, all 0.5s ease;
+
+$accordion-button-focus-box-shadow: none;
+
+$accordion-icon-width: 28px;
+$accordion-icon-color: black;
+$accordion-icon-transition: transform 0.5s ease;
+$accordion-icon-transform: rotate(-180deg);
+
+$accordion-button-icon: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' class='bi bi-caret-down-fill' viewBox='0 0 16 16'><path d='M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z'/></svg>");
+$accordion-button-active-icon: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' class='bi bi-caret-down-fill' viewBox='0 0 16 16'><path d='M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z'/></svg>");
+
+// #endregion accordion
+
+// #region checkBox
+
+$form-check-input-checked-bg-color: #685beb;
+
+// #endregion checkBox
+
+// #region animate.css
+
+.animate__animated.animate__zoomInDown {
+  animation-duration: 2s;
+}
+
+// #endregion animate.css
+
+// ↑↑↑  變數覆蓋(Variable overrides) 要寫在這行"上面"  ↑↑↑
+// 這裡導入所有 bootstrap 樣式
+// 最後營運階段(實務)可以用部份導入來進行最佳化
+// 參考: https://getbootstrap.com/docs/5.3/customize/sass/#importing
+@import '~bootstrap/scss/bootstrap';
+// ↓↓↓  其它客製樣式要寫在這行的"下面" ↓↓↓
+
+//#region chr
+
+.chr-h1 {
+  font-family: 'Roboto';
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 6.4px;
+  line-height: normal;
+}
+
+.chr-h2 {
+  font-family: 'Roboto';
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 4.8px;
+  line-height: normal;
+}
+
+.chr-h3 {
+  font-family: 'Roboto';
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 4px;
+  line-height: normal;
+}
+
+.chr-h4 {
+  font-family: 'Roboto';
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 3.2px;
+  line-height: normal;
+}
+
+.chr-h5 {
+  font-family: 'Roboto';
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 2.4px;
+  line-height: normal;
+}
+
+.chr-h6 {
+  font-family: 'Roboto';
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 2px;
+  line-height: normal;
+}
+
+.chr-h7 {
+  font-family: 'Roboto';
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 1.8px;
+  line-height: normal;
+}
+
+.chr-p {
+  font-family: 'Roboto';
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 1.6px;
+  line-height: normal;
+}
+
+.chr-pj {
+  font-family: 'Roboto';
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 1.6px;
+  line-height: normal;
+}
+
+.chr-p-14 {
+  font-family: 'Roboto', Helvetica;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 1.4px;
+  line-height: normal;
+}
+
+.chr-p-12 {
+  font-family: 'Roboto', Helvetica;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 1.2px;
+  line-height: normal;
+}
+
+//#endregion chr
+
+//#region chb
+
+.chb-h1 {
+  font-family: 'Roboto';
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 600;
+  letter-spacing: 6.4px;
+  line-height: normal;
+}
+
+.chb-h2 {
+  font-family: 'Roboto';
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 600;
+  letter-spacing: 4.8px;
+  line-height: normal;
+}
+
+.chb-h3 {
+  font-family: 'Roboto';
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 600;
+  letter-spacing: 4px;
+  line-height: normal;
+}
+
+.chb-h4 {
+  font-family: 'Roboto';
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  letter-spacing: 3.2px;
+  line-height: normal;
+}
+
+.chb-h5 {
+  font-family: 'Roboto';
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  letter-spacing: 2.4px;
+  line-height: normal;
+}
+
+.chb-h6 {
+  font-family: 'Roboto';
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  letter-spacing: 2px;
+  line-height: normal;
+}
+
+.chb-h7 {
+  font-family: 'Roboto';
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  letter-spacing: 1.8px;
+  line-height: normal;
+}
+
+.chb-p {
+  font-family: 'Roboto';
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  letter-spacing: 1.6px;
+  line-height: normal;
+}
+
+.chb-p-14 {
+  font-family: 'Roboto', Helvetica;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  letter-spacing: 1.4px;
+  line-height: normal;
+}
+
+.chb-p-12 {
+  font-family: 'Roboto', Helvetica;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  letter-spacing: 1.2px;
+  line-height: normal;
+}
+
+//#endregion chb
+
+//#region eng
+
+.eng-h1 {
+  font-family: 'Alata';
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 1.92px;
+  line-height: normal;
+}
+
+.eng-h2 {
+  font-family: 'Alata';
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 1.44px;
+  line-height: normal;
+}
+
+.eng-h3 {
+  font-family: 'Alata';
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 1.2px;
+  line-height: normal;
+}
+
+.eng-h4 {
+  font-family: 'Alata';
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0.96px;
+  line-height: normal;
+}
+
+.eng-h5 {
+  font-family: 'Alata';
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0.72px;
+  line-height: normal;
+}
+
+.eng-h6 {
+  font-family: 'Alata';
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0.6px;
+  line-height: normal;
+}
+
+.eng-h7 {
+  font-family: 'Alata';
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0.54px;
+  line-height: normal;
+}
+
+.eng-p {
+  font-family: 'Alata';
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0.48px;
+  line-height: normal;
+}
+
+//#endregion eng
+
+// #region RWD music-container font-size
+
+@media (max-width: 390px) {
+  .music-container {
+    @include small-container($container-padding-x-small);
+  }
+
+  //#region chr
+  .chr-h1 {
+    font-family: 'Roboto';
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 4px;
+    line-height: normal;
+  }
+
+  .chr-h2 {
+    font-family: 'Roboto';
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 3.2px;
+    line-height: normal;
+  }
+
+  .chr-h3 {
+    font-family: 'Roboto';
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 2.4px;
+    line-height: normal;
+  }
+
+  .chr-h4 {
+    font-family: 'Roboto';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 2px;
+    line-height: normal;
+  }
+
+  .chr-h5 {
+    font-family: 'Roboto';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 1.8px;
+    line-height: normal;
+  }
+
+  .chr-h6 {
+    font-family: 'Roboto';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 1.6px;
+    line-height: normal;
+  }
+
+  .chr-h7 {
+    font-family: 'Roboto', Helvetica;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 1.4px;
+    line-height: normal;
+  }
+
+  .chr-p {
+    font-family: 'Roboto', Helvetica;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 1.2px;
+    line-height: normal;
+  }
+
+  .chr-p-10 {
+    font-family: 'Roboto', Helvetica;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 1px;
+    line-height: normal;
+  }
+
+  .chr-p-9 {
+    font-family: 'Roboto', Helvetica;
+    font-size: 9px;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 0.9px;
+    line-height: normal;
+  }
+
+  .chr-p-8 {
+    font-family: 'Roboto', Helvetica;
+    font-size: 8px;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 0.8px;
+    line-height: normal;
+  }
+
+  //#endregion chr
+
+  //#region chb
+
+  .chb-h1 {
+    font-family: 'Roboto';
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 600;
+    letter-spacing: 4px;
+    line-height: normal;
+  }
+
+  .chb-h2 {
+    font-family: 'Roboto';
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    letter-spacing: 3.2px;
+    line-height: normal;
+  }
+
+  .chb-h3 {
+    font-family: 'Roboto';
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    letter-spacing: 2.4px;
+    line-height: normal;
+  }
+
+  .chb-h4 {
+    font-family: 'Roboto';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    letter-spacing: 2px;
+    line-height: normal;
+  }
+
+  .chb-h5 {
+    font-family: 'Roboto';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    letter-spacing: 1.8px;
+    line-height: normal;
+  }
+
+  .chb-h6 {
+    font-family: 'Roboto';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    letter-spacing: 1.6px;
+    line-height: normal;
+  }
+
+  .chb-h7 {
+    font-family: 'Roboto', Helvetica;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    letter-spacing: 1.4px;
+    line-height: normal;
+  }
+
+  .chb-p {
+    font-family: 'Roboto', Helvetica;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    letter-spacing: 1.2px;
+    line-height: normal;
+  }
+
+  .chb-p-10 {
+    font-family: 'Roboto', Helvetica;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 600;
+    letter-spacing: 1px;
+    line-height: normal;
+  }
+
+  .chb-p-8 {
+    font-family: 'Roboto', Helvetica;
+    font-size: 8px;
+    font-style: normal;
+    font-weight: 600;
+    letter-spacing: 0.8px;
+    line-height: normal;
+  }
+
+  //#endregion chb
+
+  //#region eng
+
+  .eng-h1 {
+    font-family: 'Alata';
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 1.2px;
+    line-height: normal;
+  }
+
+  .eng-h2 {
+    font-family: 'Alata';
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 0.96px;
+    line-height: normal;
+  }
+
+  .eng-h3 {
+    font-family: 'Alata';
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 0.72px;
+    line-height: normal;
+  }
+
+  .eng-h4 {
+    font-family: 'Alata';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 0.6px;
+    line-height: normal;
+  }
+
+  .eng-h5 {
+    font-family: 'Alata';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 0.54px;
+    line-height: normal;
+  }
+
+  .eng-h6 {
+    font-family: 'Alata';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 0.48px;
+    line-height: normal;
+  }
+
+  .eng-h7 {
+    font-family: 'Alata';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 0.42px;
+    line-height: normal;
+  }
+
+  .eng-p {
+    font-family: 'Alata';
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 0.36px;
+    line-height: normal;
+  }
+
+  //#endregion eng
+}
+
+// #endregion RWD music-container font-size
+
+//#region reset css
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+  height: 100%;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+
+footer {
+  margin-top: auto;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+img {
+  display: block;
+  border: 0;
+}
+
+i,
+em {
+  font-style: normal;
+}
+
+a,
+u,
+ins,
+s,
+del {
+  text-decoration: none;
+}
+
+input,
+button {
+  outline: none;
+  border: none;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+//#endregion reset css

@@ -1,0 +1,35 @@
+// #region flexCenter
+
+.outsideFlexCenter,
+.innerFlexCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.innerFlexCenter {
+  flex-direction: column;
+}
+
+// #endregion flexCenter
+
+// #region thirdContainer
+
+@media (max-width: 390px) {
+  .thirdContainer {
+    padding: 0;
+  }
+}
+
+// #endregion thirdContainer
+
+// #region sweetalert2
+
+@media (max-width: 390px) {
+  .customSwal {
+    width: 250px;
+    font-size: 12px;
+  }
+}
+
+// #endregion sweetalert2

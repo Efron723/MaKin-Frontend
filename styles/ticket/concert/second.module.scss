@@ -1,0 +1,51 @@
+// #region flexCenter
+
+.outsideFlexCenter,
+.innerFlexCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.innerFlexCenter {
+  flex-direction: column;
+}
+
+// #endregion flexCenter
+
+// #region accordion marginTop
+
+.accordionMarginTop {
+  margin-top: 20px;
+}
+
+@media (max-width: 390px) {
+  .accordionMarginTop {
+    margin-top: 0px;
+  }
+
+  .innerFlexCenter {
+    width: 100%;
+  }
+}
+
+// #endregion accordion marginTop
+
+// #region sweetalert2
+
+@media (max-width: 390px) {
+  .maskCustomSwal {
+    width: 300px;
+    font-size: 12px;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 390px) {
+  .customSwal {
+    width: 250px;
+    font-size: 12px;
+  }
+}
+
+// #endregion sweetalert2

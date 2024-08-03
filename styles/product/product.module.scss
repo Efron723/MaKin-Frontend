@@ -1,0 +1,368 @@
+.imgContainer {
+  position: relative;
+  width: 100%;
+  height: 100%; // 确保容器高度与 SwiperSlide 高度匹配
+  overflow: hidden;
+}
+
+.indexImg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: auto; // 或者使用 cover 根据需要调整
+  transform: translate(-50%, -50%);
+}
+
+/* margin */
+.mt-100 {
+  margin-top: 100px;
+}
+.mt-80 {
+  margin-top: 80px;
+}
+.mt-52 {
+  margin-top: 52px;
+}
+.mt-40 {
+  margin-top: 40px;
+}
+.mt-28 {
+  margin-top: 28px;
+}
+
+.mb-100 {
+  margin-bottom: 100px;
+}
+.mb-60 {
+  margin-bottom: 60px;
+}
+.mb-40 {
+  margin-bottom: 40px;
+}
+.mb-30 {
+  margin-bottom: 30px;
+}
+.my-100 {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+.my-40 {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.my-20 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.mx-400 {
+  margin-left: 400px;
+  margin-right: 400px;
+}
+.mx-161 {
+  margin-left: 160px;
+  margin-right: 160px;
+}
+.mx-160 {
+  margin-left: 160px;
+  margin-right: 160px;
+}
+.ml-136 {
+  margin-left: 136px;
+}
+.ml-28 {
+  margin-left: 28px;
+}
+.mr-10 {
+  margin-right: 10px;
+}
+
+.pl-20 {
+  margin-left: 20px;
+}
+// padding
+.pt-80 {
+  padding-top: 80px;
+}
+
+.px-30 {
+  padding: 0 30px;
+}
+.btn-760 {
+  width: 760px;
+  padding: 30px 20px;
+}
+.btn-761 {
+  width: 760px;
+  padding: 30px 20px;
+}
+.text-white {
+  color: white;
+}
+.text-purple3 {
+  color: #dbd7ff;
+}
+
+.w-1060,
+.w-1061 {
+  width: 1060px;
+}
+.w-800 {
+  width: 800px;
+}
+.w-795 {
+  width: 795px;
+}
+.w-780 {
+  width: 780px;
+}
+.w-500 {
+  width: 500px;
+}
+.w-456 {
+  width: 456px;
+}
+.w-400 {
+  width: 400px;
+}
+.w-390 {
+  width: 390px;
+}
+.w-335 {
+  width: 350px;
+}
+.w-180 {
+  width: 180px;
+}
+.w-160 {
+  width: 160px;
+}
+.w-58 {
+  width: 58px;
+}
+.w-50 {
+  width: 50px;
+}
+
+.h-725 {
+  height: 725px;
+}
+.h-166 {
+  height: 166px;
+}
+.h-120 {
+  height: 120px;
+}
+.h-100 {
+  height: 100px;
+}
+.h-54 {
+  height: 54px;
+}
+.h-40 {
+  height: 40px;
+}
+.wh-250 {
+  width: 300px;
+}
+.wh-200 {
+  width: 250px;
+  height: 250px;
+}
+.wh-100 {
+  width: 100px;
+  height: 100px;
+}
+
+.bg-bk {
+  background-color: #000;
+}
+.bg-white {
+  background-color: #fff;
+}
+// ${styles['bg-purple2']}
+.bg-purple2 {
+  background-color: #958cea;
+}
+.bg-grey {
+  background-color: #f0f0f0;
+  width: 80px;
+}
+
+.input-border {
+  border: 2px solid black;
+}
+// $form-check-input-checked-bg-color: #685beb;
+.paymentCircle {
+  width: 25px;
+  height: 25px;
+  margin-right: 20px;
+  border: 1px solid black;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.paymentBlockLeft {
+  display: flex;
+  align-items: center;
+}
+
+.card {
+  border: 1px solid #685beb;
+  padding: 0px;
+  // margin-right: 1px;
+  background-color: black;
+}
+.center-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.centerItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.space-between {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.text-center {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.item .text-center-x {
+  text-align: center;
+}
+.columnCenter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.rowCenter {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.row2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.btn-disabled {
+  padding: 12px 20px;
+  color: #685beb;
+  border: 1px solid #685beb;
+}
+.pic {
+  width: 456px;
+  height: 456px;
+  object-fit: fill;
+}
+.pic2 {
+  width: 166px;
+  height: 166px;
+  object-fit: fill;
+}
+
+// 手機
+@media screen and (max-width: 390px) {
+  // <CarouselIndex />
+  .h-725 {
+    height: 200px;
+  }
+  .indexImg {
+    height: 200x;
+    width: 390px;
+  }
+  // index
+  .mx-161 {
+    margin-left: 28px;
+    margin-right: 28px;
+  }
+  .my-100 {
+    margin-top: 28px;
+    margin-bottom: 60px;
+  }
+  .mt-52 {
+    margin-top: 40px;
+  }
+  .ml-28 {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  //[pid]
+  .mx-160 {
+    margin-left: 28px;
+    margin-right: 28px;
+  }
+  .w-456 {
+    width: auto;
+  }
+  .ml-136 {
+    margin-left: 0px;
+  }
+  .mt-80 {
+    margin-top: 40px;
+  }
+
+  .borderPurple3 {
+    padding-bottom: 24px;
+    border-bottom: 1px solid #dbd7ff;
+  }
+
+  .pic {
+    width: 310px;
+    height: 310px;
+  }
+  .pic2 {
+    width: 105px;
+    height: 105px;
+  }
+  // cart
+  .w-1060 {
+    width: 385px;
+  }
+  .w-1061 {
+    width: 300px;
+  }
+  .mb-40 {
+    margin-bottom: 0px;
+  }
+  .ml-20 {
+    margin-left: 20px;
+  }
+
+  .text18 {
+    font-size: 18px;
+    font-weight: 800;
+  }
+  .btn-760 {
+    width: 334px;
+    padding: 0px 0px;
+  }
+  .btn-761 {
+    width: 311px;
+    padding: 0px 0px;
+  }
+  .mb-m-40 {
+    margin-bottom: 40px;
+  }
+
+  // payment
+  .w-800 {
+    width: 334px;
+  }
+  .chb-h5 {
+    font-size: 14px;
+  }
+  .chb-p {
+    font-size: 12px;
+  }
+}

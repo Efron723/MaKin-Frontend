@@ -1,0 +1,31 @@
+// #region ticketArea
+
+.ticketArea {
+  color: black;
+}
+
+.ticketAreaBlock {
+  padding: 10px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 2px solid #685BEB;
+}
+
+.ticketArea > .ticketAreaBlock:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.ticketAreaBlockLeft {
+  width: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ticketAreaSquare {
+  width: 17px;
+  height: 17px;
+}
+
+// #endregion ticketArea

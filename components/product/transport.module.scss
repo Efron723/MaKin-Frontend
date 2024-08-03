@@ -1,0 +1,51 @@
+.transport {
+  margin: 15px 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.payment > .paymentBlock:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+.transportBlock {
+  // display: flex;
+  // justify-content: space-between;
+}
+
+.transportBlockHome, .transportBlockMarkt {
+  display: flex;
+  // align-items: center;
+}
+
+.transportCircle {
+  width: 25px;
+  height: 25px;
+  margin-right: 20px;
+  border: 1px solid black;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.bg-bk {
+    background-color: black;
+}
+.bg-white {
+    background-color: #fff;
+}
+.w-750 {
+  width: 750px;
+}
+
+.mt-40 {
+  margin-top: 40px;
+}
+.mt-28 {
+  margin-top: 28px;
+}
+
+@media screen and (max-width:390px){
+  .w-750 {
+    width: 280px;
+  }
+}

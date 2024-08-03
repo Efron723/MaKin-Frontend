@@ -1,0 +1,89 @@
+// #region flex center
+
+.progressBar,
+.numBlock,
+.progressBarBlockText,
+.progressBarIconBlock {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+// #endregion flex center
+
+// #region progressBar + timeCounter
+
+.progressBarHeight {
+  // height: 70px;
+}
+
+// #endregion progressBar + timeCounter
+
+// #region progressBar
+
+.progressBar {
+  height: 70px;
+  padding: 0 20px;
+  // background-color: #958cea;
+}
+
+.progressBarBlock {
+  width: 261px;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.numBlock {
+  width: 34px;
+  height: 38px;
+  color: white;
+  
+}
+.progressBarBlockText {
+  width: 190px;
+  height: 100%;
+}
+
+.progressBarIconBlock {
+  width: 68px;
+  height: 100%;
+}
+
+.progressBarIcon {
+  width: 35px;
+  height: 35px;
+}
+.style.step1 {}
+
+// ${styles['bg-purple2']}
+.bg-purple2 {
+  background-color: #958cea;
+}
+
+// #endregion progressBar
+
+// 手機
+@media screen and (max-width:400px){
+.progressBar {
+  width: 388px;
+}
+.progressBarBlock {
+  width: 90px;
+    display: flex;
+  flex-direction: column;
+}
+.progressBarBlockText {
+  font-size: 14px;
+  // display:contents;
+}
+.progressBarIcon {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+  margin-left: 10px;
+  }
+
+
+  
+}

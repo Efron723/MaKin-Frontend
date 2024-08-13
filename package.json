@@ -37,6 +37,7 @@
     "react-lottie": "^1.2.4",
     "react-paginate": "^8.2.0",
     "react-top-loading-bar": "^2.3.1",
+    "react-use-measure": "^2.1.1",
     "rsuite": "^5.65.1",
     "sweetalert2": "^11.11.0",
     "sweetalert2-react-content": "^5.0.7",

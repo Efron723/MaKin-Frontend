@@ -103,7 +103,7 @@ export default function Artist() {
 
   // spotify 授權隱藏按鈕
   const handleLogin = () => {
-    router.push('http://localhost:3005/login')
+    router.push('https://makin-backend.vercel.app/login')
   }
 
   // 頁面重新渲染時：取得列表、搜尋條件

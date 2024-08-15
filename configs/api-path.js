@@ -1,4 +1,4 @@
-export const API_SERVER = 'http://localhost:3005'
+export const API_SERVER = 'https://makin-backend.vercel.app'
 
 export const ACT_LIST = `${API_SERVER}/api/activity/`
 // export const AB_ADD_POST = `${API_SERVER}/address-book/add`

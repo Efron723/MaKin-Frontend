@@ -1,4 +1,4 @@
-export const API_SERVER = 'http://localhost:3005/api'
+export const API_SERVER = 'https://makin-backend.vercel.app/api'
 
 export const addFavorite = async (eventId) => {
   try {

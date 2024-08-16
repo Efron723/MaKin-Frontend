@@ -28,7 +28,7 @@ export default function Complete() {
     { label: '購物車', href: '/cart' },
   ]
   const { store711, openWindow, closeWindow } = useShip711StoreOpener(
-    'http://localhost:3005/api/shipment/711'
+    'https://makin-backend.vercel.app/api/shipment/711'
   )
   const storeKey = 'store711'
   const { userProfile, orderNum } = useTotal()

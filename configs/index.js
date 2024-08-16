@@ -2,7 +2,7 @@ export const PORT = 3000
 export const DEV = true
 
 // // express 的位置
-// export const API_SERVER = 'http://localhost:3005'
+// export const API_SERVER = 'https://makin-backend.vercel.app/'
 
 // export const MB_ADD_POST = `${API_SERVER}`
 

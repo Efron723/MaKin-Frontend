@@ -6,7 +6,7 @@ import toast, { Toaster } from 'react-hot-toast'
 import { useAuth } from '@/hooks/use-auth'
 import { getCollectionData } from '@/services/collection'
 import Link from 'next/link'
-export const API_SERVER = 'http://localhost:3005'
+export const API_SERVER = 'https://makin-backend.vercel.app'
 
 export default function Collection() {
   const [cardData, setCardData] = useState([])

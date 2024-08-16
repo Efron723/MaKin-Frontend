@@ -12,7 +12,7 @@ export default function Transport({ onSelectTransport }) {
   const [storeAddress, setStoreAddress] = useState('')
   // 711取貨
   const { store711, openWindow, closeWindow } = useShip711StoreOpener(
-    'http://localhost:3005/api/shipment/711',
+    'https://makin-backend.vercel.app/api/shipment/711',
     { autoCloseMins: 3 } // x分鐘沒完成選擇會自動關閉，預設5分鐘。
   )
   // 會員資料

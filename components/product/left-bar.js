@@ -15,7 +15,7 @@ export default function LeftBar() {
 
   // 與伺服器作fetch獲得資料(建議寫在useEffect上面與外面比較容易維護管理)
   const getProducts = async (params = {}) => {
-    const baseUrl = 'http://localhost:3005/api/my-products'
+    const baseUrl = 'https://makin-backend.vercel.app/api/my-products'
     // 轉換為查詢字串
     const searchParams = new URLSearchParams(params)
     const url = `${baseUrl}?${searchParams.toString()}`

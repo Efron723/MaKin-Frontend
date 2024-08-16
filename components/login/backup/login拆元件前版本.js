@@ -230,14 +230,17 @@ export default function Login({
     // 表單檢查 --- END
 
     // 最後檢查完全沒問題才送到伺服器(ajax/fetch)
-    const res = await fetch('http://localhost:3005/api/members/raw-sql', {
-      method: 'POST',
-      headers: {
-        Accept: 'application/json',
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify(userRegister),
-    })
+    const res = await fetch(
+      'https://makin-backend.vercel.app/api/members/raw-sql',
+      {
+        method: 'POST',
+        headers: {
+          Accept: 'application/json',
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(userRegister),
+      }
+    )
 
     const data = await res.json()
 

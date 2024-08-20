@@ -10,7 +10,7 @@ export default function DeleteAllSeat({
   const [isPhoneView, setIsPhoneView] = useState(false)
   useEffect(() => {
     const handleResize = () => {
-      setIsPhoneView(window.innerWidth <= 390)
+      setIsPhoneView(window.innerWidth <= 450)
     }
 
     handleResize()

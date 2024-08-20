@@ -15,7 +15,7 @@ export default function FixedContentLayout({ children, title = '' }) {
 
   useEffect(() => {
     const handleResize = () => {
-      setIsPhoneView(window.innerWidth <= 390)
+      setIsPhoneView(window.innerWidth <= 450)
 
       if (!isPhoneView && navRef.current && footerRef.current) {
         const navHeight = navRef.current.offsetHeight

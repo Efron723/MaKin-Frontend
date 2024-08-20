@@ -15,7 +15,7 @@ export default function ProgressBar({ progressBarRef }) {
 
   useEffect(() => {
     const handleResize = () => {
-      setIsPhoneView(window.innerWidth <= 390)
+      setIsPhoneView(window.innerWidth <= 450)
     }
 
     // 初次加載時檢查螢幕寬度

@@ -38,7 +38,7 @@ export default function SelectSeat() {
         }px)`
         setContentHeight(availableHeight)
       }
-      setIsPhoneView(window.innerWidth <= 390)
+      setIsPhoneView(window.innerWidth <= 450)
     }
 
     // 初次計算內容高度，確保在組件首次渲染時設置正確的高度

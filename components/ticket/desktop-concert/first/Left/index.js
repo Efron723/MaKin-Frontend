@@ -127,7 +127,7 @@ export default function Left({
 
   useEffect(() => {
     const handleResize = () => {
-      if (window.innerWidth <= 390) {
+      if (window.innerWidth <= 450) {
         setMaxRangeX(100)
         setMaxRangeY(100)
       } else {

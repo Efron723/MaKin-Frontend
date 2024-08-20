@@ -19,7 +19,7 @@ export default function Minimap({
 
   useEffect(() => {
     const handleResize = () => {
-      const mobileView = window.innerWidth <= 390
+      const mobileView = window.innerWidth <= 450
       setIsMobile(mobileView)
       setScaledDimensions({
         width: mobileView ? 200 / scale : 350 / scale,

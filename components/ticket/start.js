@@ -14,7 +14,7 @@ export default function Start() {
 
   useEffect(() => {
     const handleResize = () => {
-      setIsPhoneView(window.innerWidth <= 390)
+      setIsPhoneView(window.innerWidth <= 450)
     }
 
     handleResize()

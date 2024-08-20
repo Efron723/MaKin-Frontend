@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect, useCallback } from 'react'
+import React, { useState, useRef, useEffect } from 'react'
 import TicketArea from './ticketArea'
 import SelectTicketBlock from './selectTicketBlock'
 import Zoom from './zoom'
@@ -70,24 +70,7 @@ export default function Left({
     setTimeoutId(setTimeout(() => setShowSelectTicketBlock(false), 300))
   }
 
-  useEffect(() => {
-    const handleTouchMove = (event) => {
-      event.preventDefault()
-      handleMouseMove()
-    }
-
-    const svgElement = svgRef.current
-
-    svgElement.addEventListener('touchmove', handleTouchMove, {
-      passive: false,
-    })
-
-    return () => {
-      svgElement.removeEventListener('touchmove', handleTouchMove)
-    }
-  }, [handleMouseMove])
-
-  const handleMouseMove = useCallback(() => {
+  const handleMouseMove = () => {
     clearTimeout(timeoutId)
     setShowSelectTicketBlock(false)
     setTimeoutId(
@@ -95,7 +78,7 @@ export default function Left({
         setShowSelectTicketBlock(true)
       }, 300)
     )
-  }, [timeoutId])
+  }
 
   const handleSeatClick = (event, seatNumber) => {
     event.stopPropagation()

@@ -173,6 +173,7 @@ export default function Left({
         : event.pageY - translateY
 
     const handleMouseMove = (moveEvent) => {
+      event.preventDefault()
       const newTranslateX =
         moveEvent.type === 'touchmove'
           ? moveEvent.touches[0].pageX - startX

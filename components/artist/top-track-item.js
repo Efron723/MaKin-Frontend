@@ -79,7 +79,7 @@ export default function TopTrackItem({
         .btn-control:hover {
           color: white;
         }
-        @media (max-width: 390px) {
+        @media (max-width: 450px) {
           .img-size {
             width: 40px;
             height: 40px;

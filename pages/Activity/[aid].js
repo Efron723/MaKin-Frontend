@@ -222,7 +222,7 @@ export default function Aid() {
           margin-top: 80px;
           margin-bottom: 80px;
         }
-        @media (max-width: 390px) {
+        @media (max-width: 450px) {
           .mt-80 {
             margin-top: 20px;
           }

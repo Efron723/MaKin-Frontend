@@ -131,7 +131,7 @@ export default function MainMusicInfo({
             height: 100%;
           }
         }
-        @media (max-width: 390px) {
+        @media (max-width: 450px) {
           .custom-bg-01 {
             height: 11.25rem;
           }

@@ -143,7 +143,7 @@ export default function ActivityCard({
           transform: scale(1.015, 1.015);
           transition: all 0.3s ease-out;
         }
-        @media (max-width: 390px) {
+        @media (max-width: 450px) {
           .chb-h4 {
             font-size: 18px;
             letter-spacing: 1.8px;

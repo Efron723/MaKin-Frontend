@@ -513,7 +513,7 @@ $form-check-input-checked-bg-color: #685beb;
 
 // #region RWD music-container font-size
 
-@media (max-width: 390px) {
+@media (max-width: 450px) {
   .music-container {
     @include small-container($container-padding-x-small);
   }

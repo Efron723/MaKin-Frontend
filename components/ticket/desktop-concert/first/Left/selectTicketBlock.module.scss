@@ -12,7 +12,7 @@
   background-color: white;
   z-index: 1000;
 
-  @media (max-width: 390px) {
+  @media (max-width: 450px) {
     width: 155px;
   }
 }
@@ -28,7 +28,7 @@
   border-style: solid dashed dashed;
   border-color: white transparent transparent;
 
-  @media (max-width: 390px) {
+  @media (max-width: 450px) {
     top: 88px;
     left: 65px;
   }

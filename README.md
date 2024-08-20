@@ -320,7 +320,7 @@ $container-padding-x-small: 28px;
   }
 }
 
-@media (max-width: 390px) {
+@media (max-width: 450px) {
   .music-container {
     @include small-container($container-padding-x-small);
   }

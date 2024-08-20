@@ -19,7 +19,7 @@
   margin-top: 20px;
 }
 
-@media (max-width: 390px) {
+@media (max-width: 450px) {
   .accordionMarginTop {
     margin-top: 0px;
   }
@@ -33,7 +33,7 @@
 
 // #region sweetalert2
 
-@media (max-width: 390px) {
+@media (max-width: 450px) {
   .maskCustomSwal {
     width: 300px;
     font-size: 12px;
@@ -41,7 +41,7 @@
   }
 }
 
-@media (max-width: 390px) {
+@media (max-width: 450px) {
   .customSwal {
     width: 250px;
     font-size: 12px;

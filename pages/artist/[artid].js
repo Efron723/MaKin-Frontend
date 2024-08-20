@@ -302,7 +302,7 @@ export default function Artid() {
         .width-60 {
           width: 60%;
         }
-        @media (max-width: 390px) {
+        @media (max-width: 450px) {
           .mt-120 {
             margin-top: 80px;
           }

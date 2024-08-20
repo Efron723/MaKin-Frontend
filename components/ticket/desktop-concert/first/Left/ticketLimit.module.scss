@@ -11,7 +11,7 @@
   border-radius: 5px;
   z-index: 2000;
 
-  @media (max-width: 390px) {
+  @media (max-width: 450px) {
     width: 250px;
   }
 }
@@ -26,7 +26,7 @@
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
 
-  @media (max-width: 390px) {
+  @media (max-width: 450px) {
   height: 50px;
   }
 }
@@ -43,7 +43,7 @@
   line-height: 40px;
   letter-spacing: 2px;
 
-  @media (max-width: 390px) {
+  @media (max-width: 450px) {
   padding: 20px;
   line-height: 30px;
   font-size: 15px;

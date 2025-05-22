@@ -162,10 +162,18 @@
 }
 
 .copyright {
+  background-color: transparent;
   position: absolute;
   bottom: 0;
   right: 0;
   color: rgba(255, 255, 255, .5);
+}
+
+.copyright:hover {
+  color: rgba(255, 99, 71, 0.7);
+  font-size: 22px;
+  transition: all 0.3s ease;
+  font-weight: bolder;
 }
 
 @media (max-width: 450px) {
